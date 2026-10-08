@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Lilia Gvenetadze | Data & BI Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#E9EDF3; --ink:#17202E; --muted:#4B586B; --line:#C3CCDA; --accent:#2B4C9B; --chip:#D7DEE9;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){--bg:#121823;--ink:#E7ECF4;--muted:#9AA7BB;--line:#2A3547;--accent:#8DB1FF;--chip:#1E2838}
+}
+:root[data-theme="dark"]{--bg:#121823;--ink:#E7ECF4;--muted:#9AA7BB;--line:#2A3547;--accent:#8DB1FF;--chip:#1E2838}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Instrument Sans",system-ui,-apple-system,"Segoe UI",sans-serif;font-size:17px;line-height:1.6}
+.wrap{max-width:62rem;margin:0 auto;padding:0 1.5rem}
+header{padding:5rem 0 3.5rem}
+h1{font-family:"Bricolage Grotesque","Helvetica Neue",Arial,sans-serif;font-weight:800;font-size:clamp(3rem,10vw,6.5rem);line-height:.95;letter-spacing:-.03em;margin:0 0 1.5rem}
+.lead{font-size:clamp(1.15rem,2.4vw,1.45rem);max-width:36rem;margin:0 0 1.75rem;line-height:1.45}
+.meta{display:flex;flex-wrap:wrap;gap:.5rem 1.75rem;color:var(--muted);font-size:.95rem}
+.meta a{color:var(--accent);font-weight:600;text-decoration:none;border-bottom:1.5px solid currentColor}
+a:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:2px}
+.project{display:grid;grid-template-columns:minmax(0,15rem) minmax(0,1fr);gap:1rem 3rem;padding:2.75rem 0;border-top:1.5px solid var(--line)}
+.tool{font-family:"Bricolage Grotesque","Helvetica Neue",Arial,sans-serif;font-weight:700;font-size:clamp(1.7rem,3.4vw,2.2rem);line-height:1.05;letter-spacing:-.02em;margin:0}
+.kind{display:block;font-family:"Instrument Sans",system-ui,sans-serif;font-weight:500;font-size:.9rem;letter-spacing:0;color:var(--muted);margin-top:.6rem}
+h2{font-family:"Bricolage Grotesque","Helvetica Neue",Arial,sans-serif;font-weight:700;font-size:1.45rem;line-height:1.2;letter-spacing:-.01em;margin:0 0 .9rem;max-width:34rem}
+dl{margin:0;max-width:40rem}
+dt{font-weight:600;margin-top:1rem}
+dd{margin:.15rem 0 0;color:var(--muted)}
+ul.chips{list-style:none;display:flex;flex-wrap:wrap;gap:.45rem;padding:0;margin:1.4rem 0 0}
+.chips li{background:var(--chip);border-radius:999px;padding:.2rem .8rem;font-size:.85rem;font-weight:500}
+.about,.skills{padding:2.75rem 0;border-top:1.5px solid var(--line)}
+.about p,.skills p{max-width:40rem;margin:0}
+.about h2,.skills h2{margin-bottom:.7rem}
+footer{border-top:1.5px solid var(--line);padding:2.5rem 0 4rem;color:var(--muted);font-size:.95rem}
+footer a{color:var(--accent);font-weight:600}
+@media (max-width:720px){
+  header{padding:3rem 0 2.5rem}
+  .project{grid-template-columns:1fr;padding:2.25rem 0}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Lilia<br>Gvenetadze</h1>
+    <p class="lead">I turn raw data into dashboards and clear recommendations. Finance graduate with hands-on work in Power BI, Tableau, R and Python.</p>
+    <div class="meta">
+      <span>Business Management (Finance), Kutaisi International University, 2026</span>
+      <span>Kutaisi, Georgia</span>
+      <a href="mailto:lilia.gvenetadze20@gmail.com">lilia.gvenetadze20@gmail.com</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="project" aria-labelledby="p1">
+      <p class="tool">Power BI<span class="kind">Individual project</span></p>
+      <div>
+        <h2 id="p1">KIU Student Data Dashboard</h2>
+        <dl>
+          <dt>Business question</dt>
+          <dd>What does the university's student data show, and how can someone explore it without writing a query?</dd>
+          <dt>What I built</dt>
+          <dd>An interactive Power BI dashboard with slicers, filters and a mix of chart types, designed so the key insights read at a glance.</dd>
+        </dl>
+        <ul class="chips"><li>Power BI</li><li>Filters and slicers</li><li>Dashboard design</li></ul>
+      </div>
+    </section>
+
+    <section class="project" aria-labelledby="p2">
+      <p class="tool">Python<span class="kind">End-to-end analysis</span></p>
+      <div>
+        <h2 id="p2">What drives life expectancy across income groups?</h2>
+        <dl>
+          <dt>Business question</dt>
+          <dd>How do wealth, health spending, education spending and infant mortality relate to life expectancy in countries at different income levels?</dd>
+          <dt>Data and cleaning</dt>
+          <dd>Five World Bank indicators for 21 countries in four income groups, 2000 to 2020. I reshaped the files, merged them by country and year, filled gaps by interpolation within each country, capped outliers with the IQR rule and ran a data quality report before and after.</dd>
+          <dt>Analysis</dt>
+          <dd>New features: log GDP, a Health Burden Index and Human Capital Investment. Nine charts covering distributions, correlations and trends by income group. I compared Linear Regression, Decision Tree and Random Forest models by R&sup2; and MSE, then grouped countries with K-Means clustering.</dd>
+        </dl>
+        <ul class="chips"><li>Python</li><li>pandas</li><li>scikit-learn</li><li>seaborn</li></ul>
+      </div>
+    </section>
+
+    <section class="project" aria-labelledby="p3">
+      <p class="tool">Tableau<span class="kind">Group project</span></p>
+      <div>
+        <h2 id="p3">Formula 1: reliability, drivers and constructors</h2>
+        <dl>
+          <dt>Business question</dt>
+          <dd>Which constructors and countries see the most races ended by retirement, and how have top drivers and teams performed across seasons?</dd>
+          <dt>Data and calculations</dt>
+          <dd>The Formula 1 World Championship dataset (races, results, drivers, constructors, circuits). The workbook classifies every result as finished or did not finish, then calculates DNF rate per constructor, average DNFs per race by country and constructor points per year using fixed LOD expressions. Country names were standardised and missing positions filled.</dd>
+          <dt>Views</dt>
+          <dd>Eleven worksheets in a Tableau story, including race and DNF maps, top 10 drivers and constructors, grid versus finishing position, KPI sheets and a constructor forecast.</dd>
+        </dl>
+        <ul class="chips"><li>Tableau</li><li>LOD expressions</li><li>Maps</li><li>KPIs</li></ul>
+      </div>
+    </section>
+
+    <section class="project" aria-labelledby="p4">
+      <p class="tool">R Shiny<span class="kind">Group project of five</span></p>
+      <div>
+        <h2 id="p4">Health Investment &amp; Outcomes dashboard</h2>
+        <dl>
+          <dt>Business question</dt>
+          <dd>Does spending more on health lead to better outcomes? Six research questions, one chart each, across 11 countries including Georgia, 2002 to 2022.</dd>
+          <dt>Data and build</dt>
+          <dd>Indicators pulled live from the World Bank API in R, cleaned and merged by country and year, with health spending adjusted to constant 2015 USD. The app has a year-range slider, a country selector and a top-N control.</dd>
+          <dt>My part</dt>
+          <dd>Research question 4: how infant mortality changed over time across countries, including the chart and its written analysis. I also contributed to the overall comments and analysis.</dd>
+        </dl>
+        <ul class="chips"><li>R</li><li>Shiny</li><li>plotly</li><li>World Bank API</li></ul>
+      </div>
+    </section>
+
+    <section class="skills" aria-labelledby="s1">
+      <h2 id="s1">Tools and skills</h2>
+      <p>Power BI, Tableau, Excel, SQL, Python, R. KPI design, data cleaning and validation, financial ratio analysis, presentations. Financial analysis of Amazon and Pfizer (ROI, profit margin, asset turnover). English C1, Georgian native, German A2.</p>
+    </section>
+  </main>
+
+  <footer>
+    Open to entry-level roles in business intelligence, data and financial analysis. Write to
+    <a href="mailto:lilia.gvenetadze20@gmail.com">lilia.gvenetadze20@gmail.com</a>.
+  </footer>
+</div>
+</body>
+</html>
